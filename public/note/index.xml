@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Notes on My New Hugo Site</title>
+    <link>http://example.org/note/</link>
+    <description>Recent content in Notes on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 20 Sep 2022 09:16:39 +0800</lastBuildDate><atom:link href="http://example.org/note/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jwt</title>
+      <link>http://example.org/note/jwt/</link>
+      <pubDate>Tue, 20 Sep 2022 09:16:39 +0800</pubDate>
+      
+      <guid>http://example.org/note/jwt/</guid>
+      <description>JWT json 開放標準 rfc7519，全名為 JSON Web Token， 是數位簽章(Digital Signature)的其中一種，用於兩個網絡服務器之間的資料傳送，如 app 的使用者端與伺服器端。 JWT 的加密演算法有HMAC、RSA、ECDS，而是實際可以使用 密碼(經過 HMAC 演算法) 或用一對 公鑰/私鑰(經過 RSA 或 ECDSA 演算法) 來對 JWT 進行簽章。
+結構 header payload signature/encryption data 其中前兩個元素 header 和 payload 是特定結構的 JSON 物件，第三個部分取決於演算法是用來作簽章還是加密，如果是未加密的 JWT，則將其省略。JWT 可以被編碼成 JWS/JWE 簡潔的表現形式(Compact Serialization)。JWS 和 JWE 規範中定義了另一種序列化格式，稱為 JSON 序列化，這是一種非簡潔的表示形式，允許在同一 JWT 中使用多個簽章或接收者。
+簡潔的序列化(The compact serialization)是對前兩個 UTF-8 字節的 JSON 元素（header 和 payload）以及進行簽章或加密的 data(不是 JSON 物件本身) 做 Base64 URL 安全編碼。三部分分別用一個 . 隔開。
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9. # header eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWV9.</description>
+    </item>
+    
+  </channel>
+</rss>

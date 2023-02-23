@@ -1,0 +1,17 @@
+<h2>主导航菜单</h2>
+
+<ul>
+    {{ range .Site.Menus.main }} 
+    {{if .HasChildren}}
+    <li>{{.Name}}</li>
+    <ul>
+        {{ range .Children }}
+        <li>
+        <a href="{{ .URL }}">{{ .Name }}</a>
+        </li>
+        {{ end }}
+    </ul>
+    {{ else }}
+    <li><a href="{{.URL}}">{{.Name}}</a></li>
+    {{end}} {{ end }}
+</ul>
